@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* This is for Lead page */
+.leadpage_container{
+    background-color: black;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px 15px 40px;
+}
+.leadpage h1{
+    color: rgb(98, 92, 92);
+}
+.link_jump{
+    margin-right: 10%;
+}
+.link_jump a{
+    padding: 20px;
+    color: gray;
+    font-family: sans-serif;
+}
+.link_jump a:nth-child(1):hover, .link_jump a:nth-child(2):hover, .link_jump a:nth-child(3):hover, .link_jump a:nth-child(4):hover{
+    background-color:rgb(215, 201, 201);
+    border-radius: 100px;
+    color: green;
+    font-weight: bold;
+}
+.link_jump a:nth-child(5){
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-35%);
+    transition: 1s;
+}
+.link_jump a:nth-child(5):hover{
+    transform: translateY(-100%);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.adicated_container{
+    display: flex;
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.paragraph{
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+    100% {left:0px; top:0px;}
+    50%  {top:50px;}
+  }
+.paragraph h1{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1;
+}
+.paragraph p{
+    margin-top: 5px;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.greas{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.greas li{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fa-circle-check{
+    color: white;
+    background-color: blue;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 5px
+}
+.card_aside{
+    width: 35%;
+    border-radius: 10px; 
+}
+.card-wrap{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 25px;
+}
+.first-name, .last-name, .email-name, .phone-name, .company-name, .role-name{
+    width: 100%;
+}
+.first-name input:hover, .last-name input:hover, .email-name input:hover, .phone-name input:hover, .company-name input:hover, .role-name input:hover{
+    transform: translateX(10%);
+    transition: 1s;
+}
+.last-name, .phone-name, .role-name{
+    margin-left: 30px;
+}
+.card-wrap input{
+    border: 1px gray;
+    border-radius: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    height: 10vh;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-wrap label{
+    line-height:2;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+}
+.Eemail, .com-role{
+    margin-top: 30px;
+}
+.name{
+    margin-top: 30px;
+}
+.com-role, .name, .Eemail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.get-start button{
+    width: 100%;
+    padding: 30px;
+    border: 1px white;
+    background-color: #ff06b4;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.get-start button:hover{
+    background-color: black;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+/* This is for smart people page */
+.trustes{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: rgb(57, 51, 51);
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.text-paragraph{
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-paragraph p{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: gray;
+    width: 100%;
+}
+.text-paragraph h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(56, 51, 51);
+    margin-top: 20px;
+}
+.logo{
+    margin-top: 20px;
+}
+.text-1, .text-2{
+    border-right: 2px solid gray;
+    padding-right: 10%;
+    margin-bottom: 100px;
+}
+.text-3{
+    padding-bottom: 100px;
+}
+.logo img{
+    width: 50%;
+    height: 5vh;
+}
+.text-2,.text-1, .text-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* This is for mobile app page */
+.mobile_container{
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.fa-mobile, .fa-desktop, .fa-users, .fa-gear{
+    background-color: rgb(214, 188, 238);
+    padding: 10px;
+    font-size: 30px;
+    color: blueviolet;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.mobile_container h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: rgb(51, 44, 44);
+}
+.mobile_container p{
+    font-size: 20px;
+    color: gray;
+}
+/* this is for team grow page */
+.dedicated_team_container{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.text-dedicated h1{
+    line-height: 1;
+    font-size: 45px;
+    margin-bottom: 10px;
+    
+}
+.text-dedicated{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-of-dedicated img{
+    width: 200%;
+}
+.text-dedicated p{
+    margin-bottom: 30px;
+}
+.button button:nth-child(1){
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.button button:nth-child(1):hover{
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.button button:nth-child(2){
+    padding: 20px 40px;
+    background-color: white;
+    margin-left: 30px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.button button:nth-child(2):hover{
+    background-color: black;
+    transform: translateY(-10%);
+    color: white;
+    transition: 1S;
+}
+/* This is for process page */
+.our_proccess_container{
+    padding: 50px;
+}
+.our_proccess_container span{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.our_proccess_container h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    margin-top: 15px;
+}
+.pppqq{
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+}
+.graph_circle_number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.graph_circle_number h3{
+    color: rgb(35, 33, 33);
+}
+.graph_circle_number button{
+    background-color: #f8cfec;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    border: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.graph_circle_number button:hover{
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.circle-number1, .circle-number2, .circle-number3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gray;
+    font-family: sans-serif;
+}
+/* This is for feature page */
+.browse_our_feature_container{
+    padding: 50px;
+}
+.browse_our_feature_container h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(79, 72, 72);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.impsum{
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+    margin-bottom: 40px;
+}
+.card-Browe{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.box1,.box2, .box3, .box4{
+    width: 49%;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box1:hover,.box2:hover, .box3:hover, .box4:hover{
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.type-app{
+    padding-top: 50px;
+}
+.icon-app{
+    padding-top: 40px;
+    margin-right: 5px;
+}
+.box2, .box4{
+    margin-left: 20px;
+}
+.box3, .box4{
+    margin-top: 20px;
+}
+.type-app h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.type-app p{
+    font-size: 20px;
+}
+/* This is for This is for box-container page */
+.bbozz-container{
+    background-color: black;
+}
+.box_container{
+    width: 100%;
+    padding: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.boxx1, .boxx2, .boxx3, .boxx4, .boxx5, .boxx6{
+    width: 49%;
+    height: 50vh;
+    background-color: white;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.boxx1:hover, .boxx2:hover, .boxx3:hover, .boxx4:hover, .boxx5:hover, .boxx6:hover{
+    transform: translateY(-10%);
+    transition: 1S;
+}
+.boxx2, .boxx4, .boxx6{
+    margin-left: 20px;
+}
+.boxx3, .boxx4, .boxx5, .boxx6{
+    margin-top: 20px;
+}
+.boxx1, .boxx2, .boxx3, .boxx4, .boxx5, .boxx6{
+    display: flex;
+    flex-direction: column;
+}
+.why-plus{
+    display: flex;
+    justify-content: space-between;
+}
+.why-plus span{
+    font-size: 30px;
+    background-color: #f9eff6;
+    padding: 10px;
+    border-radius: 10px;
+    width: 10%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.why-plus span:hover{
+    background-color: #f4a1db;
+    color: white;
+}
+.box_container h4{
+    font-size: 30px;
+}
+.box_container p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+/* This is for footer_container */
+
+.head-foot{
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.head-foot h2{
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.head-foot li{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: gray;
+}
+.newss button{
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+}
+.head-foot li:hover{
+    transform: translateY(-10%);
+    transition: 1s;
+    font-weight: bold;
+}
+.nav-footer{
+    padding: 20px;
+    text-align: center;
+}
+.nav-footer a{
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(48, 43, 43);
+    text-align: center;
+}
+.nav-footer a:hover{
+    font-weight: bold;
+    transform: translateY(-10%);
+    transition: 1s;
+}
+.leg-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 70px 50px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.fisrt-end a{
+    margin-right: 10px;
+    color:rgb(81, 78, 78);
+}
+.fisrt-end a:hover{
+    transform: translateY(-10%);
+    transition: 1s;
+    font-weight: bold;
+}
+.last-end a{
+    color:rgb(81, 78, 78);
+}
